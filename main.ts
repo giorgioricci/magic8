@@ -15,6 +15,9 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(2000)
     basic.clearScreen()
 })
+input.onButtonPressed(Button.AB, function () {
+    input.calibrateCompass()
+})
 input.onButtonPressed(Button.B, function () {
     varGradi = input.compassHeading()
     if (varGradi < 45) {
@@ -28,6 +31,6 @@ input.onButtonPressed(Button.B, function () {
     } else {
         basic.showString("N")
     }
-    basic.pause(5000)
+    basic.pause(1000)
     basic.clearScreen()
 })
