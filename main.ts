@@ -1,5 +1,5 @@
 let number = 0
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     number = randint(1, 3)
     if (number == 3) {
